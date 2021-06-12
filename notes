@@ -1,0 +1,5 @@
+in powershell, use this command for sudo like behavior
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+command to run babel and watch
+    babel ./src/app.js --out-file=./public/scripts/app.js --presets="env,react" --watch

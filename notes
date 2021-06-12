@@ -3,3 +3,17 @@ in powershell, use this command for sudo like behavior
 
 command to run babel and watch
     babel ./src/app.js --out-file=./public/scripts/app.js --presets="env,react" --watch
+
+
+git
+  initialise the project - go to root folder 
+  > git init
+  check status of files
+  > git status
+  to ignore certain files and directories, add them in .gitignore file
+  add files to staging area
+  > git add 'file.js'
+  to add all files in current directory
+  > git add .
+  to commit files from staging
+  > git commit -m "message"

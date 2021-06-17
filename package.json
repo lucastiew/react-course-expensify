@@ -4,7 +4,6 @@
   "description": "learn react",
   "main": "index.js",
   "scripts": {
-    "serve": "live-server public",
     "build:dev": "webpack --mode development",
     "build:prod": "webpack --mode production",
     "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
@@ -21,7 +20,6 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "express": "^4.17.1",
-    "live-server": "^1.2.1",
     "moment": "^2.29.1",
     "normalize.css": "^8.0.1",
     "react": "^16.14.0",

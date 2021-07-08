@@ -8,7 +8,7 @@
     "build:prod": "webpack --mode production",
     "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "dev-server": "webpack serve",
-    "test": "jest --config=jest.config.json",
+    "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
     "start": "node server/server.js",
     "heroku-postbuild": "npm run build:prod"
   },
@@ -19,7 +19,10 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "firebase": "^8.6.8",
     "moment": "^2.29.1",
     "normalize.css": "^8.0.1",
     "numeral": "^2.0.6",
@@ -31,6 +34,7 @@
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
     "uuid": "^8.3.2",
     "webpack": "^5.35.1",
     "webpack-dev-server": "^3.11.2"
@@ -54,6 +58,7 @@
     "node-sass": "^5.0.0",
     "raf": "^3.3.2",
     "react-test-renderer": "^17.0.2",
+    "redux-mock-store": "^1.5.4",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
     "webpack-cli": "^4.6.0"
